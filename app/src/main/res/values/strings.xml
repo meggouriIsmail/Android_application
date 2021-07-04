@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ControleGestionClient</string>
+    <string name="date_naissance">Date Naissance</string>
+    <string-array name="situation_Fam">
+        <item>Marié</item>
+        <item>Célibataire</item>
+    </string-array>
+    <string-array name="diplomes">
+        <item>Technicien</item>
+        <item>Technicien Spécialisé</item>
+        <item>Master</item>
+    </string-array>
+</resources>

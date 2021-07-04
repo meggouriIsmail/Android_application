@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ajouter"
+    android:background="#FABEB7"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="103dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="91dp"
+                android:text="Gestion Clients"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="75dp"
+                android:textSize="18dp"
+                android:layout_marginEnd="297dp"
+                android:text="Identifiant : " />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="145dp"
+                android:layout_marginEnd="297dp"
+                android:textSize="18dp"
+                android:text="Nom : " />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="215dp"
+                android:layout_marginEnd="297dp"
+                android:textSize="18dp"
+                android:text="Prenom : " />
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="65dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="135dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/prenom"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="205dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="258dp"
+                android:layout_marginEnd="292dp"
+                android:text="@string/date_naissance" />
+
+            <DatePicker
+                android:id="@+id/daten"
+                android:layout_width="wrap_content"
+                android:layout_height="153dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="293dp"
+                android:layout_marginEnd="63dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:outlineSpotShadowColor="#FFFFFF"
+                android:spinnersShown="true" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="455dp"
+                android:layout_marginEnd="292dp"
+                android:text="Sexe : " />
+
+            <RadioGroup
+                android:id="@+id/myRadioGroup"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="479dp"
+                android:layout_marginEnd="106dp"
+                android:background="#FF9800">
+
+                <RadioButton
+                    android:id="@+id/masculin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Masculin" />
+
+                <RadioButton
+                    android:id="@+id/fem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feminin" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="555dp"
+                android:text="Situation familiale :" />
+
+            <Spinner
+                android:id="@+id/situationf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="555dp"
+                android:layout_marginEnd="123dp"
+                android:entries="@array/situation_Fam" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="587dp"
+                android:text="Diplome :" />
+
+
+            <Spinner
+                android:id="@+id/diplome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="589dp"
+                android:layout_marginEnd="97dp"
+                android:layout_marginBottom="50dp"
+                android:entries="@array/diplomes" />
+
+            <TextView
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="633dp"
+                android:layout_marginEnd="318dp"
+                android:text="Salaire : "
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/salaire"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="617dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnAff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="671dp"
+                android:layout_marginEnd="153dp"
+                android:text="Ajouter"
+                android:onClick="ajouter"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
